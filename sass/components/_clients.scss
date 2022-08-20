@@ -1,0 +1,29 @@
+.client__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-background-color);
+    border-radius: 4px;
+    color: var(--icon-background-color);
+
+    transition: border-color var(--time-and-function), color var(--time-and-function);
+
+    &:hover, &:focus {
+    border-color: var(--logo-main-color);
+    color: var(--logo-main-color);
+}
+}
+
+.client__icon {
+    fill: currentColor;
+}
+
