@@ -1,5 +1,6 @@
 @import './utils/vars';
 @import './utils/common';
+@import './utils/mixins-placeholders';
 @import './utils/visually-hidden';
 @import './utils/section';
 @import './utils/container';
@@ -7,6 +8,7 @@
 @import './utils/social-list';
 
 @import './components/page-header';
+@import './components/mobile-menu';
 @import './components/hero';
 @import './components/bonuses';
 @import './components/what-we-do';
