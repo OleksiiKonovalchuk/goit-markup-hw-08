@@ -292,7 +292,7 @@ button {
 }
 
 .mobile-menu-btn__icon {
-  fill: --secondary-text-color;
+  fill: var(--secondary-text-color);
 }
 .mobile-menu-btn .mobile-menu-btn__icon:hover, .mobile-menu-btn .mobile-menu-btn__icon:focus {
   fill: var(--logo-main-color);
@@ -310,7 +310,7 @@ button {
 }
 
 .mobile-menu-close__icon {
-  fill: --secondary-text-color;
+  fill: var(--secondary-text-color);
 }
 .mobile-menu-close__btn .mobile-menu-close__icon:hover, .mobile-menu-close__btn .mobile-menu-close__icon:focus {
   fill: var(--logo-main-color);
@@ -473,7 +473,7 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636363636;
-    width: 696px;
+    max-width: 696px;
   }
 }
 .hero__btn {

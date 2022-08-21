@@ -6,7 +6,7 @@
 	padding: 0;
 }
 .mobile-menu-btn__icon {
-	fill: --secondary-text-color;
+	fill: var(--secondary-text-color);
 
 	.mobile-menu-btn &:hover,
 	.mobile-menu-btn &:focus {
@@ -24,7 +24,7 @@
 	padding: 0;
 }
 .mobile-menu-close__icon {
-	fill: --secondary-text-color;
+	fill: var(--secondary-text-color);
 
 	.mobile-menu-close__btn &:hover,
 	.mobile-menu-close__btn &:focus {
