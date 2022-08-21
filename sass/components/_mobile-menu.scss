@@ -8,7 +8,7 @@
 .mobile-menu-btn__icon {
 	fill: --secondary-text-color;
 
-	&:hover, &:focus {
+	.mobile-menu-btn &:hover, .mobile-menu-btn &:focus {
 		fill: var(--logo-main-color);
 	}}
 .mobile-menu-close__btn {
@@ -24,7 +24,7 @@
 .mobile-menu-close__icon {
     fill: --secondary-text-color;
 
-		&:hover, &:focus {
+		.mobile-menu-close__btn &:hover, .mobile-menu-close__btn &:focus {
 		fill: var(--logo-main-color);
 	}}
 .mobile-menu-wrapper {
@@ -37,17 +37,22 @@
     max-height: 796px;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
     background-color: bisque;
-    display: none;
+    opacity: 0;
+	pointer-events: none;
+	transform: scaleZ(-100);
+	transition: opacity var(--time-and-function), transform var(--time-and-function);
 }
 .is-open {
-    display: block;
+	opacity: 1;
+	pointer-events: auto;
+	transform: scaleZ(1);
 }
 .mobile-menu__container {
     position: relative;
     padding-left:40px;
     padding-top: 48px;
     padding-bottom: 48px;
-		height: 100%;
+	height: 100%;
 }
 .mobile-menu__item {
   &:not(:last-child) {

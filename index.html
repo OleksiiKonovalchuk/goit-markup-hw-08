@@ -78,13 +78,13 @@
 			
 		</header>
 		<main>
-			<!-- <section class="hero">
+			<section class="hero">
 				<div class="hero__wrapper container">
 					<h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
 					<button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
 				</div>
-			</section> -->
-			<!-- <section class="bonuses section">
+			</section>
+			<section class="bonuses section">
 				<div class="container">
 					<h2 class="visually-hidden">Описание преимуществ</h2>
 					<ul class="bonuses__list list">
@@ -114,14 +114,14 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
-			<!-- <section class="what-we-do section">
+			</section>
+			<section class="what-we-do section">
 				<div class="container">
 					<h2 class="main-heading">Чем мы занимаемся</h2>
 					<ul class="box__list list">
 						<li class="box__item">
 							<div class="box__wrapper"
-								><img
+								><img srcset="./images/section-box/box1@2x.jpg 2x"
 									class="box-img"
 									src="./images/section-box/box1.jpg"
 									alt="Планирование сайта"
@@ -132,7 +132,7 @@
 						</li>
 						<li class="box__item">
 							<div class="box__wrapper"
-								><img
+								><img srcset="./images/section-box/box2@2x.jpg 2x"
 									class="box__img"
 									src="./images/section-box/box2.jpg"
 									alt="Оптимизация дял мобильного устройства"
@@ -144,7 +144,7 @@
 						</li>
 						<li class="box__item"
 							><div class="box__wrapper"
-								><img
+								><img srcset="./images/section-box/box2@2x.jpg 2x"
 									class="box__img"
 									src="./images/section-box/box3.jpg"
 									alt="Вибор цвета на планшете"
@@ -156,19 +156,30 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
-			<!-- <section class="team section">
+			</section>
+			<section class="team section">
 				<div class="container">
 					<h2 class="main-heading">Наша команда</h2>
 					<ul class="team__list list">
 						<li class="team__member">
-							<img
+							<picture>
+								<source 
+								srcset="./images/section-team/mobile/team1@2x.jpg 2x"
+								media="(min-width: 480px">
+								<source 
+								srcset="./images/section-team/tablet/team1@2x.jpg 1x, ./images/section-team/tablet/team1@2x.jpg 2x"
+								media="(min-width: 768px">
+								<source 
+								srcset="./images/section-team/desktop/team1@2x.jpg 1x, ./images/section-team/desktop/team1@2x.jpg 2x"
+								media="(min-width: 1200px">
+
+								<img
 								class="team__img"
 								src="./images/section-team/img1.jpg"
 								alt="Игорь Демьяненко"
-								width="270"
-								height="260"
 							/>
+							</picture>
+							
 							<div class="team__wrapper">
 								<h3 class="team__names">Игорь Демьяненко</h3>
 								<p class="team__position" lang="en">Product Designer</p>
@@ -330,7 +341,7 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 			<!-- <section class="section clients">
 				<div class="container">
 					<h2 class="main-heading">Постоянные клиенты</h2>
@@ -453,11 +464,11 @@
 				></div>
 			</div>
 		</footer> -->
-		<!-- <div class="backdrop is-hidden" data-modal>
+		<div class="backdrop is-hidden" data-modal>
 			<form class="modal" autocomplete="off"
 				><button class="modal__btn-close" data-modal-close
 					><svg class="btn-close__icon" width="18" height="18">
-						<use href="./images/icons/icons.svg#modal-close"></use></svg></button>
+						<use href="./images/icons/icons.svg#close-modal"></use></svg></button>
 				<p class="form__header">Оставьте свои данные, мы вам перезвоним</p>
 				
 						<label class="form__label">
@@ -503,8 +514,8 @@
 				</label>
 				<button type="submit" class="form__btn-send">Отправить</button>
 			</form>
-		</div> -->
+		</div>
 		<script src="./js/mobile-menu.js"></script>
-		<!-- <script src="./js/modal.js"></script> -->
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
