@@ -62,7 +62,7 @@
 	text-transform: uppercase;
 
 	color: var(--body-main-color);
-	width: 360px;
+	max-width: 360px;
 	margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {

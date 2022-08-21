@@ -464,7 +464,7 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--body-main-color);
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto;
 }
 
@@ -524,7 +524,7 @@ button {
   background-color: var(--body-third-color);
   background-repeat: no-repeat;
   background-position: center center;
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
 }
 .bonuses__item:not(:last-child) {
@@ -1210,9 +1210,12 @@ button {
 @media screen and (min-width: 768px) {
   .portfolio__card-wrapper {
     max-width: 354px;
+    flex-grow: 1;
   }
-  .portfolio__card-wrapper:first-child {
-    height: 147px;
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
