@@ -1,7 +1,12 @@
 .main-heading {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-
-    margin-bottom: 50px;
+	@include font(700, 28px, 33px);
+	text-align: center;
+	margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+	.main-heading {
+		@include font(700, 36px, 42px);
+		text-align: center;
+		margin-bottom: 50px;
+	}
 }

@@ -80,10 +80,16 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding: 0 15px;
 }
@@ -106,12 +112,22 @@ button {
   }
 }
 .main-heading {
-  font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 .social__list {
   display: flex;
   justify-content: center;
@@ -597,12 +613,16 @@ button {
   background-color: var(--body-third-color);
 }
 
+.team__img {
+  max-width: 450px;
+}
+
 .team__wrapper {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
   border-radius: 0px 0px 4px 4px;
   border-top: none;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__names {
@@ -626,11 +646,36 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 .team__member:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team__member {
+    margin-bottom: 0;
+  }
+  .team__member:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+  }
+  .team__wrapper {
+    padding-bottom: 30px;
+  }
+}
 .client__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -639,7 +684,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icon-background-color);
   border-radius: 4px;
@@ -655,6 +700,16 @@ button {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
+}
 .page__footer {
   background-color: var(--body-secondary-color);
   padding: 60px 0;
