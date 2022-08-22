@@ -547,7 +547,7 @@ button {
   background-image: url(../images/icons/astronaut.svg);
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 460px) {
   .bonuses__item {
     width: 300px;
   }
@@ -811,7 +811,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   height: 50px;
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
   padding-left: 16px;
   background-color: transparent;
@@ -852,11 +852,6 @@ button {
   fill: currentColor;
 }
 
-@media screen and (max-width: 465px) {
-  .footer__form {
-    width: 250px;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     display: flex;
