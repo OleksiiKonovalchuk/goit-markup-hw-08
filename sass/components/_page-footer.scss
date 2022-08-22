@@ -120,6 +120,11 @@
 .btn-email__icon {
 	fill: currentColor;
 }
+@media screen and (max-width: 465px) {
+	.footer__form {
+		width: 250px;
+	}
+}
 @media screen and (min-width: 768px) {
 	.footer__wrapper {
 		display: flex;
