@@ -54,11 +54,11 @@
 		background-image: url(../images/icons/astronaut.svg);
 	}
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 479px) {
 	.bonuses__item {
-		width: 300px;
+		width: 100%;
 		&::before {
-			width: 300px;
+			width: 100%;
 		}
 	}
 }
