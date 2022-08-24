@@ -171,7 +171,6 @@ button {
   line-height: 1.1666666667;
   text-decoration: none;
   color: var(--logo-secondary-color);
-  margin-right: 93px;
 }
 
 @media screen and (max-width: 767px) {
@@ -215,6 +214,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
   .mobile-menu-btn {
     display: none;
   }
